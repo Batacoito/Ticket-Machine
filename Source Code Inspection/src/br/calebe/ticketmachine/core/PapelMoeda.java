@@ -8,6 +8,7 @@ public class PapelMoeda {
 
     protected int valor;
     protected int quantidade;
+    protected int a = 2;
 
     public PapelMoeda(int valor, int quantidade) {
         this.valor = valor;
