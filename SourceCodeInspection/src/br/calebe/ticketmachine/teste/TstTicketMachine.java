@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 
 public class TstTicketMachine {
 
-    private TicketMachine ticketMachine;
+    private TstTicketMachine ticketMachine;
 
     public String resposta = "****************\n";
 
