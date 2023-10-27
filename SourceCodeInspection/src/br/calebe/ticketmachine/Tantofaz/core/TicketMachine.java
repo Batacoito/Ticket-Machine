@@ -1,7 +1,7 @@
 package br.calebe.ticketmachine.Tantofaz.core;
 
-import br.calebe.ticketmachine.exception.PapelMoedaInvalidaException;
-import br.calebe.ticketmachine.exception.SaldoInsuficienteException;
+import br.calebe.ticketmachine.Tantofaz.exception.PapelMoedaInvalidaException;
+import br.calebe.ticketmachine.Tantofaz.exception.SaldoInsuficienteException;
 import java.util.Iterator;
 
 public class TicketMachine {
