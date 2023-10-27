@@ -35,7 +35,7 @@ public class TestTicketMachine {
 
     @Test
     // teste de impressão com dinheiro suficiente
-    public void testImprimirTicketDinheiroSuficiente() throws SaldoInsuficienteException,PapelMoedaInvalidaException {
+    public void testImprimirTicketWithSufficientBalance() throws SaldoInsuficienteException,PapelMoedaInvalidaException {
         
         ticketMachine.inserir(20);  
         String ticket = ticketMachine.imprimir();
