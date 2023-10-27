@@ -26,8 +26,7 @@ public class TestTicketMachine {
 
     @Test
     public void testGetTroco() throws PapelMoedaInvalidaException {
-        int ticket = ticketMachine.getTroco();
-        assertEquals(-100, ticket);
+        assertEquals(-100, ticketMachine.getTroco());
     }
  
     @Test
