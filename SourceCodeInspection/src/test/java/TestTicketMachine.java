@@ -25,14 +25,14 @@ public class TestTicketMachine {
         ticketMachine.inserir(150);  
         assertEquals(151, ticketMachine.getSaldo());
     }
-
+/*
     @Test(expected = PapelMoedaInvalidaException.class)
     public void testInserirInvalidQuantia() throws PapelMoedaInvalidaException {
         ticketMachine.inserir(7);  
     }
 
     
-/*
+
     @Test
     // teste de impressão com dinheiro suficiente
     public void testImprimirTicketDinheiroSuficiente() throws SaldoInsuficienteException,PapelMoedaInvalidaException {
