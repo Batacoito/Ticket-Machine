@@ -25,6 +25,12 @@ public class TestTicketMachine {
     }
 
     @Test
+    public void testGetTroco() throws PapelMoedaInvalidaException {
+        ticketMachine.getTroco();
+        assertEquals(resposta, -100);
+    }
+ 
+    @Test
     //teste para verificar a impressao com saldo suficiente
     public void testImprimirTicketWithSufficientBalance() throws SaldoInsuficienteException,PapelMoedaInvalidaException {
         ticketMachine.inserir(100);  
