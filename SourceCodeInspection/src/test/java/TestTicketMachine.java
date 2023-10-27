@@ -29,7 +29,7 @@ public class TestTicketMachine {
     @Test(expected = PapelMoedaInvalidaException.class)
     public void testInserirInvalidQuantia() throws PapelMoedaInvalidaException {
         ticketMachine.inserir(7);  
-    }*/
+    }
 
     
 
@@ -45,6 +45,15 @@ public class TestTicketMachine {
         
         assertEquals(resposta, ticket);
         assertEquals(0, ticketMachine.getSaldo());
+    }*/
+
+    @Test
+    public void testImprimirTicketWithInsufficientBalance() {
+        TicketMachine ticketMachine = new TicketMachine(50); 
+        
+        assertThrows(SaldoInsuficienteException.class, () -> {
+            ticketMachine.imprimir();
+        });
     }
 }
 /*
