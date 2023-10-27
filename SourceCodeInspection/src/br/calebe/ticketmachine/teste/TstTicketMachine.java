@@ -1,4 +1,4 @@
-package core;
+//package core;
 //import Source Code Inspection.src.br.calebe.ticketmachine.core;
 import br.calebe.ticketmachine.exception.SaldoInsuficienteException;
 import br.calebe.ticketmachine.exception.PapelMoedaInvalidaException;
