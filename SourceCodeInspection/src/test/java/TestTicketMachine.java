@@ -19,7 +19,7 @@ public class TestTicketMachine {
     public void setUp() {
         ticketMachine = new TicketMachine(75);  
     }
-/*
+
     @Test
     public void testVerificaSaldo() throws PapelMoedaInvalidaException {
         ticketMachine.inserir(150);  
@@ -32,7 +32,7 @@ public class TestTicketMachine {
     }
 
     
-
+/*
     @Test
     // teste de impressão com dinheiro suficiente
     public void testImprimirTicketDinheiroSuficiente() throws SaldoInsuficienteException,PapelMoedaInvalidaException {
