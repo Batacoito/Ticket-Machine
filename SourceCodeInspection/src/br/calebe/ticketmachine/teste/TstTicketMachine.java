@@ -23,7 +23,7 @@ public class TstTicketMachine {
     @Test
     public void testVerificaSaldo() throws PapelMoedaInvalidaException {
         ticketMachine.inserir(150);  
-        assertEquals(150, ticketMachine.getSaldo());
+        assertEquals(151, ticketMachine.getSaldo());
     }
 
     @Test(expected = PapelMoedaInvalidaException.class)
