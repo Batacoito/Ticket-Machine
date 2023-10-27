@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>br.calebe.ticketmachine</groupId>
+    <groupId>src.br.calebe.ticketmachine</groupId>
     <artifactId>ticketmachine</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -14,7 +14,7 @@
 
     <build>
         <sourceDirectory>SourceCodeInspection/src/br/calebe/ticketmachine</sourceDirectory>
-        <testSourceDirectory>SourceCodeInspection/teste</testSourceDirectory>
+        <testSourceDirectory>SourceCodeInspection/src/br/calebe/ticketmachine/teste</testSourceDirectory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
