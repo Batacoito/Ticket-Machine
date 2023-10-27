@@ -23,7 +23,7 @@ public class TestTicketMachine {
         ticketMachine.inserir(100);  
         assertEquals(100, ticketMachine.getSaldo());
         ticketMachine.inserir(150);
-        assertEquals(100, ticketMachine.getSaldo());
+        assertEquals(150, ticketMachine.getSaldo());
     }
 
     @Test
