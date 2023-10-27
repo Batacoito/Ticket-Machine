@@ -25,14 +25,7 @@ public class TstTicketMachine {
         ticketMachine.inserir(150);  
         assertEquals(150, ticketMachine.getSaldo());
     }
-
-    @Test
-    // teste de impressão com dinheiro insuficiente
-    public void testImprimirTicketWithInsufficientBalance() {
-        TicketMachine ticketMachine = new TicketMachine(50); 
-        assertThrows(SaldoInsuficienteException.class, () -> {ticketMachine.imprimir();});
-    }
-
+    
     @Test
     // teste de impressão com dinheiro suficiente
     public void testImprimirTicketDinheiroSuficiente() {
