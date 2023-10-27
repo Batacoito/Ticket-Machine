@@ -17,7 +17,7 @@ public class TestTicketMachine {
 
     @Before
     public void setUp() {
-        ticketMachine = new TicketMachine(75);  
+        ticketMachine = new TicketMachine(50);
     }
 /*
     @Test
@@ -38,7 +38,6 @@ public class TestTicketMachine {
         
         ticketMachine.inserir(50);  
         String ticket = ticketMachine.imprimir();
-        String resposta = "*****************\n";
         
         resposta += "*** R$ 50,00 ****\n";
         resposta += "*****************\n";
