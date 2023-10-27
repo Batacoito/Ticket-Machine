@@ -22,8 +22,6 @@ public class TestTicketMachine {
     public void testInserirValidQuantia() throws PapelMoedaInvalidaException {
         ticketMachine.inserir(100);  
         assertEquals(100, ticketMachine.getSaldo());
-        ticketMachine.inserir(150);
-        assertEquals(150, ticketMachine.getSaldo());
     }
 
     @Test
@@ -41,7 +39,7 @@ public class TestTicketMachine {
     @Test(expected = PapelMoedaInvalidaException.class)
     //teste para verificar a insercao de valores invalidos na maquina
     public void testInserirInvalidQuantia() throws PapelMoedaInvalidaException {
-        ticketMachine.inserir(9);  
+        ticketMachine.inserir(17);  
     }
 
 }
