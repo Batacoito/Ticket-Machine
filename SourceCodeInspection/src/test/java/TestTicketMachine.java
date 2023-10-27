@@ -17,5 +17,15 @@ public class TestTicketMachine {
         ticketMachine = new TicketMachine(50);
     }
 
+    @Test
+    public void testInserirValidQuantia() throws PapelMoedaInvalidaException {
+        ticketMachine.inserir(10);  
+        assertEquals(10, ticketMachine.getSaldo());
+    }
+
+    @Test(expected = PapelMoedaInvalidaException.class)
+    public void testInserirInvalidQuantia() throws PapelMoedaInvalidaException {
+        ticketMachine.inserir(7);  
+    }
     
 }
