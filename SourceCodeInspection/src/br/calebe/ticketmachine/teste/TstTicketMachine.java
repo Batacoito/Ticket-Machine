@@ -1,4 +1,4 @@
-package br.calebe.ticketmachine.Tantofaz.teste;
+package br.calebe.ticketmachine.Tantofaz.core;
 //import Source Code Inspection.src.br.calebe.ticketmachine.core;
 import br.calebe.ticketmachine.Tantofaz.exception.SaldoInsuficienteException;
 import br.calebe.ticketmachine.Tantofaz.exception.PapelMoedaInvalidaException;
@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
 //import static org.junit.Assert.assertEquals;
 //import static org.junit.Assert.assertThrows;
 
-public class TicketMachine {
+public class TstTicketMachine {
 
     private TstTicketMachine ticketMachine;
 
