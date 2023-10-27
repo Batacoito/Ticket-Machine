@@ -23,7 +23,6 @@
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
-                    <useSystemClassLoader>false</useSystemClassLoader>
                 </configuration>
             </plugin>
         </plugins>
