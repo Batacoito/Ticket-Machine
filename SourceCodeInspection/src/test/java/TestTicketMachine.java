@@ -48,7 +48,7 @@ public class TestTicketMachine {
     }
 }
 */
-package br.calebe.ticketmachine.core;
+package br.calebe.ticketmachine.Tantofaz.core;
 
 import br.calebe.ticketmachine.Tantofaz.exception.PapelMoedaInvalidaException;
 import br.calebe.ticketmachine.Tantofaz.exception.SaldoInsuficienteException;
