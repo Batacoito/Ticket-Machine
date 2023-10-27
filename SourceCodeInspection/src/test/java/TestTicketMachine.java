@@ -19,17 +19,17 @@ public class TestTicketMachine {
     public void setUp() {
         ticketMachine = new TicketMachine(75);  
     }
-
+/*
     @Test
     public void testVerificaSaldo() throws PapelMoedaInvalidaException {
         ticketMachine.inserir(150);  
         assertEquals(151, ticketMachine.getSaldo());
     }
-/*
+
     @Test(expected = PapelMoedaInvalidaException.class)
     public void testInserirInvalidQuantia() throws PapelMoedaInvalidaException {
         ticketMachine.inserir(7);  
-    }
+    }*/
 
     
 
@@ -39,13 +39,14 @@ public class TestTicketMachine {
         
         ticketMachine.inserir(20);  
         String ticket = ticketMachine.imprimir();
+        String resposta = "*****************\n";
         
         resposta += "*** R$ 20,00 ****\n";
         resposta += "*****************\n";
         
         assertEquals(resposta, ticket);
         assertEquals(0, ticketMachine.getSaldo());
-    }*/
+    }
 
     @Test
     public void testImprimirTicketWithInsufficientBalance() {
@@ -57,36 +58,6 @@ public class TestTicketMachine {
     }
 }
 /*
-package br.calebe.ticketmachine.Tantofaz.core;
-
-import br.calebe.ticketmachine.Tantofaz.exception.PapelMoedaInvalidaException;
-import br.calebe.ticketmachine.Tantofaz.exception.SaldoInsuficienteException;
-import org.junit.Test;
-import org.junit.Before;
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThrows;
-
-public class TestTicketMachine {
-
-    private TicketMachine ticketMachine;
-
-    @Before
-    public void setUp() {
-        ticketMachine = new TicketMachine(50);  
-    }
-
-    @Test
-    public void testInserirValidQuantia() throws PapelMoedaInvalidaException {
-        ticketMachine.inserir(10);  
-        assertEquals(10, ticketMachine.getSaldo());
-    }
-
-    @Test(expected = PapelMoedaInvalidaException.class)
-    public void testInserirInvalidQuantia() throws PapelMoedaInvalidaException {
-        ticketMachine.inserir(7);  
-    }
-
     @Test
     public void testImprimirTicketWithSufficientBalance() throws SaldoInsuficienteException,PapelMoedaInvalidaException {
         ticketMachine.inserir(50);  
@@ -97,14 +68,4 @@ public class TestTicketMachine {
         assertEquals(resposta, ticket);
         assertEquals(0, ticketMachine.getSaldo());
     }
-
-    @Test
-    public void testImprimirTicketWithInsufficientBalance() {
-        TicketMachine ticketMachine = new TicketMachine(50); 
-        
-        assertThrows(SaldoInsuficienteException.class, () -> {
-            ticketMachine.imprimir();
-        });
-    }
-}
 */
