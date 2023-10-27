@@ -11,7 +11,7 @@ import static org.junit.Assert.*;
 
 public class TstTicketMachine {
 
-    private TstTicketMachine ticketMachine;
+    private TicketMachine ticketMachine;
 
     public String resposta = "****************\n";
 
