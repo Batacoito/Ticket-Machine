@@ -13,8 +13,8 @@
     </properties>
 
     <build>
-        <sourceDirectory>SourceCodeInspection/src/br/calebe/ticketmachine</sourceDirectory>
-        <testSourceDirectory>SourceCodeInspection/src/br/calebe/ticketmachine/teste</testSourceDirectory>
+        <sourceDirectory>Source Code Inspection/src/br/calebe/ticketmachine</sourceDirectory>
+        <testSourceDirectory>Source Code Inspection/src/test/java</testSourceDirectory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
