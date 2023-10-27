@@ -13,34 +13,10 @@ public class TestTicketMachine {
 
     private TicketMachine ticketMachine;
 
-    
-
     @Before
     public void setUp() {
         ticketMachine = new TicketMachine(50);
     }
-/*
-    @Test
-    public void testVerificaSaldo() throws PapelMoedaInvalidaException {
-        ticketMachine.inserir(150);  
-        assertEquals(151, ticketMachine.getSaldo());
-    }
-
-    @Test(expected = PapelMoedaInvalidaException.class)
-    public void testInserirInvalidQuantia() throws PapelMoedaInvalidaException {
-        ticketMachine.inserir(7);  
-    }*/
-/*
-    @Test
-    public void testImprimirTicketWithSufficientBalance() throws SaldoInsuficienteException,PapelMoedaInvalidaException {
-        ticketMachine.inserir(50);  
-        String ticket = ticketMachine.imprimir();
-        String resposta = "*****************\n";
-        resposta += "*** R$ 50,00 ****\n";
-        resposta += "*****************\n";
-        assertEquals(resposta, ticket);
-        assertEquals(0, ticketMachine.getSaldo());
-    }*/
 
     @Test
     public void testImprimirTicketWithSufficientBalance() throws SaldoInsuficienteException,PapelMoedaInvalidaException {
@@ -55,15 +31,3 @@ public class TestTicketMachine {
         assertEquals(0, ticketMachine.getSaldo());
     }
 }
-/*
-    @Test
-    public void testImprimirTicketWithSufficientBalance() throws SaldoInsuficienteException,PapelMoedaInvalidaException {
-        ticketMachine.inserir(50);  
-        String ticket = ticketMachine.imprimir();
-        String resposta = "*****************\n";
-        resposta += "*** R$ 50,00 ****\n";
-        resposta += "*****************\n";
-        assertEquals(resposta, ticket);
-        assertEquals(0, ticketMachine.getSaldo());
-    }
-*/
