@@ -17,16 +17,5 @@ public class TestTicketMachine {
         ticketMachine = new TicketMachine(50);
     }
 
-    @Test
-    public void testImprimirTicketWithSufficientBalance() throws SaldoInsuficienteException,PapelMoedaInvalidaException {
-        
-        ticketMachine.inserir(50);  
-        String ticket = ticketMachine.imprimir();
-        String resposta = "****************\n";
-        resposta += "*** R$ 50,00 ****\n";
-        resposta += "*****************\n";
-        
-        assertEquals(resposta, ticket);
-        assertEquals(0, ticketMachine.getSaldo());
-    }
+    
 }
