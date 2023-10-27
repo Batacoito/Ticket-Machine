@@ -6,7 +6,7 @@ import org.junit.Test;
 import org.junit.Before;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThrows;
+//import static org.junit.Assert.assertThrows;
 
 public class TstTicketMachine {
 
@@ -21,7 +21,7 @@ public class TstTicketMachine {
 
     @Test
     // teste para verificar saldo
-    public void testVerificaSaldo() throws PapelMoedaInvalidaException {
+    public void testVerificaSaldo() {
         ticketMachine.inserir(150);  
         assertEquals(150, ticketMachine.getSaldo());
     }
@@ -35,7 +35,7 @@ public class TstTicketMachine {
 
     @Test
     // teste de impressão com dinheiro suficiente
-    public void testImprimirTicketDinheiroSuficiente() throws SaldoInsuficienteException,PapelMoedaInvalidaException {
+    public void testImprimirTicketDinheiroSuficiente() {
         
         ticketMachine.inserir(20);  
         String ticket = ticketMachine.imprimir();
