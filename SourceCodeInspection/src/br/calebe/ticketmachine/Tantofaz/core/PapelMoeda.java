@@ -1,4 +1,4 @@
-package br.calebe.ticketmachine.core;
+package br.calebe.ticketmachine.Tantofaz.core;
 
 /**
  *
