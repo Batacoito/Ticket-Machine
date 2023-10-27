@@ -12,7 +12,7 @@ public class TstTicketMachine {
 
     private TicketMachine ticketMachine;
 
-    public String resposta = "*****************\n";
+    public String resposta = "****************\n";
 
     @Before
     public void setUp() {
