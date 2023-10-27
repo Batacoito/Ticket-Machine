@@ -13,7 +13,7 @@
     </properties>
 
     <build>
-        <!-- <sourceDirectory>SourceCodeInspection/src/br/calebe/ticketmachine</sourceDirectory> -->
+        <sourceDirectory>SourceCodeInspection/src/br/calebe/ticketmachine</sourceDirectory>
         <testSourceDirectory>SourceCodeInspection/src/br/calebe/ticketmachine/teste</testSourceDirectory>
         <plugins>
             <plugin>
@@ -36,6 +36,12 @@
             <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
+
+         <dependency>
+             <groupId>junit</groupId>
+             <artifactId>junit-dep</artifactId>
+             <version>4.8.2</version>
+         </dependency>
 
         <!-- Mockito for mocking objects in tests -->
         <dependency>
