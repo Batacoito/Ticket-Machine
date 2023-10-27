@@ -1,7 +1,7 @@
 package Tantofaz.core;
 //import Source Code Inspection.src.br.calebe.ticketmachine.core;
-import br.calebe.ticketmachine.Tantofaz.exception.SaldoInsuficienteException;
-import br.calebe.ticketmachine.Tantofaz.exception.PapelMoedaInvalidaException;
+import Tantofaz.exception.SaldoInsuficienteException;
+import Tantofaz.exception.PapelMoedaInvalidaException;
 import org.junit.Test;
 import org.junit.Before;
 
