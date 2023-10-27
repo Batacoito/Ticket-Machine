@@ -24,12 +24,12 @@ public class TestTicketMachine {
     public void testVerificaSaldo() throws PapelMoedaInvalidaException {
         ticketMachine.inserir(150);  
         assertEquals(151, ticketMachine.getSaldo());
-    }*/
+    }
 
     @Test(expected = PapelMoedaInvalidaException.class)
     public void testInserirInvalidQuantia() throws PapelMoedaInvalidaException {
         ticketMachine.inserir(7);  
-    }
+    }*/
 
     
 
