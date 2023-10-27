@@ -20,10 +20,14 @@ public class TstTicketMachine {
     }
 
     @Test
-    // teste para verificar saldo
     public void testVerificaSaldo() throws PapelMoedaInvalidaException {
         ticketMachine.inserir(150);  
         assertEquals(150, ticketMachine.getSaldo());
+    }
+
+    @Test(expected = PapelMoedaInvalidaException.class)
+    public void testInserirInvalidQuantia() throws PapelMoedaInvalidaException {
+        ticketMachine.inserir(7);  
     }
 
     
