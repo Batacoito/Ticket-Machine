@@ -21,14 +21,21 @@ public class TstTicketMachine {
 
     @Test
     // teste para verificar saldo
-    public void testVerificaSaldo() {
+    public void testVerificaSaldo() throws PapelMoedaInvalidaException {
         ticketMachine.inserir(150);  
-        //assertEquals(150, ticketMachine.getSaldo());
+        assertEquals(150, ticketMachine.getSaldo());
     }
-    
+
+    @Test
+    // teste de impressão com dinheiro insuficiente
+    public void testImprimirTicketWithInsufficientBalance() {
+        TicketMachine ticketMachine = new TicketMachine(50); 
+        assertThrows(SaldoInsuficienteException.class, () -> {ticketMachine.imprimir();});
+    }
+
     @Test
     // teste de impressão com dinheiro suficiente
-    public void testImprimirTicketDinheiroSuficiente() {
+    public void testImprimirTicketDinheiroSuficiente() throws SaldoInsuficienteException,PapelMoedaInvalidaException {
         
         ticketMachine.inserir(20);  
         String ticket = ticketMachine.imprimir();
@@ -40,3 +47,4 @@ public class TstTicketMachine {
         assertEquals(0, ticketMachine.getSaldo());
     }
 }
+
